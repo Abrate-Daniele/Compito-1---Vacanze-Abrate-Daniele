@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Esercizio Gestione Biblioteca</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body> 
+        <div class="container">
+            <h1>Esercizio Gestione Biblioteca</h1>
+            <div id="login-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Inserisci la tua email">
+                    <button type="submit">Accedi</button>
+                </form>
+            </div>
+            <div id="menu">
+                <button onclick="showSection('insert-book')">Inserisci Libro</button>
+                <button onclick="showSection('borrow-book')">Prendi in Prestito</button>
+            </div>
+            <div id="insert-book" class="section hidden">
+                <h2>Inserisci un Libro</h2>
+                <form id="insert-book-form">
+                    <label for="title">Titolo:</label>
+                    <input type="text" id="title" required>
+                    <label for="genre">Genere:</label>
+                    <input type="text" id="genre" required>
+                    <label for="publication-date">Data di Pubblicazione:</label>
+                    <input type="date" id="publication-date" required>
+                    <button type="submit">Inserisci</button>
+                </form>
+            </div>
+            <div id="borrow-book" class="section hidden">
+                <h2>Prendi un Libro in Prestito</h2>
+                <form id="borrow-book-form">
+                    <label for="book-title">Titolo del Libro:</label>
+                    <select id="book-title"></select>
+                    <button type="submit">Prendi in Prestito</button>
+                </form>
+                <div>
+                    <h3>Ordina per:</h3>
+                    <button onclick="sortBooks('date')">Data</button>
+                    <button onclick="sortBooks('title')">Alfabetico</button>
+                    <button onclick="sortBooks('genere')">Genere</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>Creato da Abrate Daniele</footer>
+</html>

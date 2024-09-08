@@ -1,0 +1,53 @@
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 10px;
+    color: black;
+}
+.container {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+    margin: auto;
+}
+h1 {
+    font-size: 20px;
+    text-align: left;
+    color: blue;
+}
+h2 {
+    font-size: 18px;
+    text-align: left;
+    color: blue;
+}
+form {
+    margin-bottom: 10px;
+}
+input, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 2px;
+    font-size: 14px;
+}
+button {
+    background-color: aqua;
+    color: black;
+    border: 2px solid lightblue;
+    cursor: pointer;
+}
+button:hover {
+    background-color: lightcyan;
+}
+#menu {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#menu button {
+    width: 45%;
+    margin: 2px;
+}
+.hidden {
+    display: none;
+}
